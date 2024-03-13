@@ -1,13 +1,52 @@
 body {
     background: url('img.jpg') no-repeat center center;
     background-position: center top; /* Pour faire descendre le background */
-    
     background-size: 70%;
     background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer horizontalement les éléments */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond de la barre de navigation transparent */
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: auto; /* Pour aligner le logo à gauche */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* Alignement à gauche */
 }
 
 
-/* login form */
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease;
+    text-align: center;
+
+}
 
 .form{
     display: flex;
@@ -17,34 +56,30 @@ body {
     border: 1px solid black;
     align-items: center;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.5); 
     border-radius: 25px;
-    margin-top: 200px;
 }
 
 .form h1{
     color: white;
     font-size: 2rem;
-    border-bottom: 4px solid rgba(255, 255, 255, 0.5,);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
     margin: 50px;
-
 }
 
-/* box */
-
 .box{
-padding: 12px;
-margin: 20px;
-width: 65%;
-border: none;
-outline: none;
-border-radius: 20px;
-background-color: rgba(0, 0, 0, 0.5);
-box-shadow: inset -3px -3px 3px rgba(0, 0, 0, 0.5); 
-color: white;
-font-size: 1rem;
+    padding: 12px;
+    margin: 20px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset -3px -3px 3px rgba(0, 0, 0, 0.5); 
+    color: white;
+    font-size: 1rem;
 }
 
 #submit{
@@ -70,6 +105,3 @@ font-size: 1rem;
     color: white;
     opacity: 0.7;
 }
-
-    
-    
